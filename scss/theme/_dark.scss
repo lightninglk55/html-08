@@ -9,7 +9,7 @@ html.dark {
     --top-act-group-shadow: rgba(0, 0, 0, 0.2);
     --top-act-group-separate: #EDEDF6;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         --header-shadown-color: rgba(0, 0, 0, 0.20);
     }
 
@@ -20,4 +20,22 @@ html.dark {
      --dropdown-arrow-color: brightness(0) saturate(100%) invert(16%) sepia(8%) saturate(1832%) hue-rotate(186deg) brightness(94%) contrast(85%);
      --top-menu-border-color: #171c28;
      --menu-column-icon-color: brightness(0) saturate(100%) invert(93%) sepia(5%) saturate(78%) hue-rotate(199deg) brightness(101%) contrast(105%);
+
+    //  sidebar
+    --sidebar-bg: #292e39;
+    --sidebar-shadow: 0px 40px 90px 20px rgba(23, 28, 40 0.40);
+
+    // category item
+    --cate-item-bg: #171C28;
+    --cate-item-thumb-bg: #292E39;
+    --cate-item-title-color: #fff;
+
+    // Buttons
+    --filter-btn-color: #fff;
+    --filter-btn-bg: #171C28;
+
+    // Product cart
+    --product-cart-bg: #171C28;
+    --product-cart-shadow: rgba(0, 0, 0, 0.20);
+
 }

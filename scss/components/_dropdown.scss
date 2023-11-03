@@ -7,6 +7,11 @@
     width: min(1240px, 100%);
     display: none;
 
+    @include abstracts.screen(lg) {
+        position: initial;
+        padding-top: 0;
+    }
+
     &__inner {
         --inner-max-height: min(582px, 100vh - 158px);
         position: relative;
@@ -25,7 +30,27 @@
             translate: -50%;
             filter: var(--dropdown-arrow-color)
         }
+
+        @include abstracts.screen(lg) {
+            padding: 0 40px;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: 0;
+            --inner-max-height: auto;
+            
+
+            &::before {
+                content: none;
+            }
+
+        }
+
+        @include abstracts.screen(sm) {
+            padding: 0 20px;
+        }
     }
+
+    
 }
 
 .top-menu {
@@ -38,6 +63,13 @@
         height: calc(var(--inner-max-height) - 60px);
         border-right: 1px solid var(--top-menu-border-color);
         overflow-y: auto;
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+            height: auto;
+            border-right: none;
+        }
+        
     }
 }
 
@@ -50,19 +82,29 @@
         margin-top: 17px;
     }
 
+    @include abstracts.screen(lg) {
+        margin-top: 10px;
+    }
+
    &__icon {
         position: relative;
         flex-shrink: 0;
         width: 36px;
         height: 36px;
 
-        @include abstracts.breakpoint(xl) {
+        @include abstracts.screen(xl) {
             display: none;
+        }
+
+        @include abstracts.screen(lg) {
+            display: block;
         }
    }
 
    &__content {
     flex: 1;
+
+    
    }
 
 
@@ -87,10 +129,19 @@
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 150%;
+
+        @include abstracts.screen(lg) {
+            margin-bottom: 26px;
+        }
    }
 
    &__list {
         margin-top: 19px;
+
+        @include abstracts.screen(lg) {
+            margin-top: 0;
+            
+        }
    }
 
    &__item {
@@ -135,5 +186,16 @@
         position: initial;
         grid-template-columns: repeat(4, 1fr);
         height: calc(var(--inner-max-height) - 60px);
+
+        @include abstracts.screen(lg) {
+            grid-template-columns: 1fr;
+            height: auto;
+        }
+    }
+
+    @include abstracts.screen(lg) {
+        position: initial;
+        grid-template-columns: 1fr;
+        padding-left: 0;
     }
 }
