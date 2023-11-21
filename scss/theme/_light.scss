@@ -1,0 +1,128 @@
+@use "../abstracts";
+
+html {
+    --saparate-bg: #D2D1D6;
+    --text-color: #1A162E;
+    --icon-color: brightness(0) saturate(100%) invert(8%) sepia(6%) saturate(6490%) hue-rotate(212deg) brightness(96%) contrast(95%);
+    --body-bg: #f6f6f6;
+    --header-bg-color: #EEE;
+    --top-act-group-bg-color: #FFF;
+    --top-act-group-shadow: rgba(237, 237, 246, 0.20);
+    --top-act-group-separate: #EDEDF6;
+
+    @include abstracts.screen(lg) {
+        --header-bg-color: #fff;
+        --header-shadown-color: rgba(237, 237, 246, 0.20);
+    }
+
+    // Dropdown
+    --dropdown-bg-color: #fff;
+    --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
+    --top-menu-border-color: #d2d1d6;
+    
+    // sidebar
+    --sidebar-bg: #fff;
+    --sidebar-shadow: 0px 40px 90px 20px rgba(23, 28, 40 0.40);
+
+    // category item
+    --cate-item-bg: #eee;
+    --cate-item-thumb-bg: #fff;
+    --cate-item-title-color: #000;
+
+    @include abstracts.screen(md) {
+        --cate-item-bg: #fff;
+    }
+
+    // Buttons
+    --filter-btn-color: #6C6C72;
+    --filter-btn-bg: #fff;
+
+    --like-btn-shadow: rgba(124, 124, 124, 0.20);
+
+    // Product cart
+    --product-cart-bg: #fff;
+    --product-cart-shadow: rgba(237, 237, 246, 0.20);
+
+    // filter form
+    --filter-form-bg: #fff;
+    --filter-form-shadow: rgba(200, 200, 200, 0.4);
+    --form-tag-bg: #f8f8fb;
+    --filter-form-footer-bg: #fff;
+
+    // Footer
+    --footer-bg-color: var(--header-bg-color);
+
+    // auth 
+    --auth-content-bg: #fff;
+
+    @include abstracts.screen(md) {
+        --auth-intro-bg: #fff;
+    }
+
+    // auth
+    --form-placeholder-color: #D2D1D6;
+
+    // product-detail
+    --product-detail-bg: #fff;
+
+    --product-detail-info-bg: #F6F6F6;
+
+    --product-detail-tag-bg: #EDEDF6;
+
+    @include abstracts.screen(md) {
+        --product-detail-bg: FAFAFD;
+        --product-detail-info-bg: #fff;
+    }
+    
+    // breadcrumbs 
+    --breadcrumbs-bg: #fff;
+    --breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
+
+    // Prod-info
+    --prod-info-color: #1A162E;
+
+    --prod-info-container-bg: #fff;
+
+    @include abstracts.screen(md) {
+        --breadcrumbs-bg: #fff;
+    }
+
+    // Seearch-bar
+    --search-bar-bg: #fff;
+
+    // review card
+    --review-card-bg: #FAFAFD;
+
+    @include abstracts.screen(md) {
+        --review-card-bg: #fff;
+    }
+
+    // text content
+    --text-content-bg: #ebebeb;
+
+    // act dropdown
+    --header-dropdown-wall-bg: #d2d1d6;
+    --act-dropdown-arrow: #292E39;
+    --header-act-dropdown-bg: #fff;
+    --header-act-shadow-bg: rgba(200, 200, 200, 0.40);
+    --header-act-view-bg: #0071DC;
+    
+    // Checkout
+    --checkout-bg: #fff;
+    --checkout-shadow-bg: rgba(237, 237, 246, 0.20);
+    --cart-info-saparate: #D2D1D6;
+
+    // modal
+    --modal-content-bg: #fff;
+    --form-dialog-bg: #fff;
+    --form-option-bg: #ebebeb;
+
+    // 
+    --payment-bg: #F6F6F6;
+
+    // profile
+    --profile-sidebar-bg: #fff;
+    --profile-shadow-bg: rgba(237, 237, 246, 0.20);
+    --profile-shadow-bg-color: rgba(26, 22, 46, 0.00);
+    --profile-item-color: #fff;
+}

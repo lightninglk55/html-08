@@ -1,0 +1,73 @@
+.text-content {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    h6 {
+        font-size: 1.2rem;
+    }
+
+    h1, h2, h3, h4, h5, h6, blockquote, p, em, img, ul, li {
+        margin: 20px 0;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+
+    img + em {
+        display: block;
+        font-style: italic;
+        align-items: center;
+    }
+
+    a {
+        color: #ffb700;
+    }
+
+    blockquote {
+        background: rgba(80, 170, 159, 0.1);
+        margin-left: 10px;
+        padding: 20px;
+        border-left: 3px solid rgb(36, 151, 196);
+
+        p {
+            margin: 0;
+        }
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background: var(--text-content-bg);
+        margin: 30px 0;
+    }
+
+
+}
