@@ -1,12 +1,16 @@
+@use "../abstracts";
+
 .profile {
     &-container {
         margin-top: 30px;
+
+        @include abstracts.screen(lg)
     }
 
     &__sidebar {
         border-radius: 20px;
         background: var(--profile-sidebar-bg);
-        box-shadow: 0px 20px 60px 10px var(--profile-shadow-bg);
+        // box-shadow: 0px 20px 60px 10px var(--profile-shadow-bg);
         overflow: hidden;
     }
 
@@ -20,7 +24,7 @@
         align-items: center;
         padding: 40px 20px 20px;
         background: linear-gradient(180deg, var(--profile-shadow-bg-color) 0%, #1A162E 100%), url("../img/profile/avatar-2.png") no-repeat center / cover;
-        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.20);
+        // box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.20);
         color: #FFF;
         
         &__avatar {
@@ -94,8 +98,12 @@
         }
 
         &__card {
+            flex-wrap: wrap;
+            flex-shrink: inherit;
+            margin-top: 15px;
             height: 100%;
             width: 100%;
+            
             display: flex;
             flex: 1;
             flex-shrink: 0;
@@ -103,26 +111,58 @@
             justify-content: center;
             gap: 30px;
 
+
+            @include abstracts.screen(xl) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+
+            }
+
+            @include abstracts.screen(lg) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+            }
+
+            @include abstracts.screen(md) {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            
+
+            
+
             &-row {
                 display: flex;
+                flex: 1;
+                flex-shrink: 0;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 border-radius: 10px;
-                height: 100%;
-                width: 100%;
+                height: 171px;
+                width: 182px;
                 border: 1px dashed #B9BABE;
 
                 color: #D2D1D6;
                 font-size: 1.4rem;
                 font-weight: 500;
                 line-height: 142.857%;
+
+                @include abstracts.screen(xl) {
+                    width: 280px;
+                }
                 
             }
+            
 
             &-item {
                 width: 281px;
                 height: 171px;
+
+                
             }
 
             
@@ -157,6 +197,9 @@
         &__price {
             display: flex;
             text-align: left;
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 145.455%;
         }
 
         &__bt--saparate {
@@ -167,10 +210,26 @@
         &__thumb-img {
             width: 151px;
             height: 108px;
+
+            @include abstracts.screen(md) {
+                width: 170px;
+                height: 115px;
+            }
         }
 
         &__bottom {
             margin-top: -30px;
+
+            
+        }
+        &__md {
+            @include abstracts.screen(md) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+            }
         }
         
 
