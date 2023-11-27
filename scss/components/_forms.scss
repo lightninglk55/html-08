@@ -19,6 +19,15 @@
             flex: 1;
         }
     }
+    &__row-card {
+        @include abstracts.screen(xl) {
+            padding-bottom: 10px;
+        }
+
+        @include abstracts.screen(lg) {
+            padding-bottom: 15px;
+        }
+    }
 
 
     &__group {
@@ -27,6 +36,9 @@
 
         @include abstracts.screen(md) {
             margin-top: 15px;
+        }
+        @include abstracts.screen(sm) {
+            margin-top: 10px;
         }
 
         &--inline {

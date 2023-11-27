@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
                 <!-- Profile content -->
                 <div class="profile-container">
                     <div class="row">
-                        <div class="col-4 col-lg-12 gy-xl-3">
+                        <div class="col-4 col-lg-5 gy-xl-3 col-md-12">
                             <div class="profile__sidebar">
                                 <!-- User -->
                                 <div class="profile-user">
@@ -141,87 +141,106 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8 col-lg-12 gy-xl-3">
+                        <div class="col-8 col-lg-7 col-md-12 gy-xl-3">
                             <div class="col-12">
-                            <div class="cart-info">
-                                <label class="add-card__label">
-                                    <a href="./product-detail.html" class="cart-info__continue-link" >
-                                        <img src="./assets/icon/card-arrow-1.svg" alt="" class="cart-info__continue-icon icon" />
-                                        Continue Shopping
-                                    </a>
-                                </label>
-                                <div class="modal__body">
-                                    <div class="form__row">
-                                        <div class="form__group">
-                                            <label for="name" class="form__label form__label--small">First Name
-                                                </label>
-                                            <div class="form__text-input">
-                                                <input type="text" class="form__input" name="First Name" placeholder="Imran" id="name" minlength="2" required>
-                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                <div class="cart-info">
+                                    <label class="add-card__label">
+                                        <a href="./product-detail.html" class="cart-info__continue-link" >
+                                            <img src="./assets/icon/card-arrow-1.svg" alt="" class="cart-info__continue-icon icon" />
+                                            Continue Shopping
+                                        </a>
+                                    </label>
+                                    <div class="modal__body">
+                                        <div class="form__row ">
+                                            <div class="row form__row-card gy-lg-1">
+                                                <div class="col-6 col-xl-6 col-lg-12">
+                                                    <div class="form__group">
+                                                        <label for="name" class="form__label form__label--small">First Name</label>
+                                                        <div class="form__text-input">
+                                                            <input type="text" class="form__input" name="First Name" placeholder="Imran" id="name" minlength="2" required>
+                                                            <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                                        </div>
+                                                        <p class="form__error">Name must be at least 2 characters</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-6 col-lg-12">
+                                                    <div class="form__group">
+                                                        <label for="phone" class="form__label form__label--small">Last Name</label>
+                                                        <div class="form__text-input">
+                                                            <input type="text" class="form__input" name="phone" placeholder="Khan" id="name" minlength="10" required>
+                                                            <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                                        </div>
+                                                        <p class="form__error">Phone must be at least 2 number</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p class="form__error">Name must be at least 2 characters</p>
-                                        </div>
-                                        <div class="form__group">
-                                            <label for="phone" class="form__label form__label--small">Last Name</label>
-                                            <div class="form__text-input">
-                                                <input type="text" class="form__input" name="phone" placeholder="Khan" id="name" minlength="10" required>
-                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                        </div>         
+                                    </div>
+                                    <div class="modal__body">
+                                        <div class="form__row">
+                                            <div class="row form__row-card">
+                                                <div class="col-6 col-xl-6 col-lg-12">
+                                                    <div class="form__group">
+                                                        <label for="name" class="form__label form__label--small">Card Information</label>
+                                                        <div class="form__text-input">
+                                                            <input type="text" class="form__input" name="Card Number" placeholder="Card Number" id="name" minlength="2" required>
+                                                            <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                                        </div>
+                                                        <p class="form__error">Name must be at least 2 characters</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-6 col-lg-12 gy-xl-2">
+                                                    <div class="form__group">
+                                                        <label for="phone" class="form__label form__label--small">Expiration Date</label>
+                                                        <div class="form__text-input">
+                                                            <input type="text" class="form__input" name="phone" placeholder="MM/YY" id="date" minlength="10" required>
+                                                            <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                                        </div>
+                                                        <p class="form__error">Phone must be at least 2 number</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p class="form__error">Phone must be at least 2 number</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="modal__body">
-                                    <div class="form__row">
-                                        <div class="form__group">
-                                            <label for="name" class="form__label form__label--small">Card Information</label>
-                                            <div class="form__text-input">
-                                                <input type="text" class="form__input" name="Card Number" placeholder="Card Number" id="name" minlength="2" required>
-                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                    <div class="modal__body">
+                                        <div class="form__row">
+                                            <div class="row form__row-card">
+                                                <div class="col-6 col-xl-6 col-lg-12 gy-xl-2">
+                                                    <div class="form__group">
+                                                        <label for="name" class="form__label form__label--small">CVV</label>
+                                                        <div class="form__text-input">
+                                                            <input type="text" class="form__input" name="number" placeholder="123" id="name" minlength="2" required>
+                                                            <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                                        </div>
+                                                        <p class="form__error">Name must be at least 2 characters</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-6 col-lg-12 gy-xl-2">
+                                                    <div class="form__group">
+                                                        <label for="phone" class="form__label form__label--small">Phone Number</label>
+                                                        <div class="form__text-input">
+                                                            <input type="phone" class="form__input" name="phone" placeholder="017" id="phone" minlength="10" required>
+                                                            <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                                        </div>
+                                                        <p class="form__error">Phone must be at least 2 number</p>
+                                                    </div>
+                                                </div>
+                                                </div>
                                             </div>
-                                            <p class="form__error">Name must be at least 2 characters</p>
-                                        </div>
-                                        <div class="form__group">
-                                            <label for="phone" class="form__label form__label--small">Expiration Date</label>
-                                            <div class="form__text-input">
-                                                <input type="text" class="form__input" name="phone" placeholder="MM/YY" id="date" minlength="10" required>
-                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
-                                            </div>
-                                            <p class="form__error">Phone must be at least 2 number</p>
+                                    </div>
+                                    <div class="profile__bottom-card">
+                                        <div class="address-card__buttom profile__bottom-row">Card Preferences</div>
+                                        <div class="form__group form__group--inline profile__inline">
+                                            <label class="form__checkbox form__checkbox-card">
+                                                <input type="checkbox" name="" id="" class="form__checkbox-input d-none"/>
+                                                <span class="form__ckeckbox-label form__checkbox--label">Set as default address</span>
+                                            </label>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="modal__body">
-                                    <div class="form__row">
-                                        <div class="form__group">
-                                            <label for="name" class="form__label form__label--small">CVV</label>
-                                            <div class="form__text-input">
-                                                <input type="text" class="form__input" name="number" placeholder="123" id="name" minlength="2" required>
-                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
-                                            </div>
-                                            <p class="form__error">Name must be at least 2 characters</p>
-                                        </div>
-                                        <div class="form__group">
-                                            <label for="phone" class="form__label form__label--small">Phone Number</label>
-                                            <div class="form__text-input">
-                                                <input type="phone" class="form__input" name="phone" placeholder="017" id="phone" minlength="10" required>
-                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
-                                            </div>
-                                            <p class="form__error">Phone must be at least 2 number</p>
-                                        </div>
-                                </div>
-                                <div class="profile__bottom-card">
-                                    <div class="address-card__buttom profile__bottom-row">Card Preferences</div>
-                                    <div class="form__group form__group--inline profile__inline">
-                                        <label class="form__checkbox form__checkbox-card">
-                                            <input type="checkbox" name="" id="" class="form__checkbox-input d-none"/>
-                                            <span class="form__ckeckbox-label form__checkbox--label">Set as default address</span>
-                                        </label>
+                                    <div class="modal__bottom">
+                                        <button class="btn btn--small btn--text dialog__btn">Cancel</button>
+                                        <button class="btn btn--small btn--primary dialog__btn">Confirm</button>
                                     </div>
-                                </div>
-                                <div class="modal__bottom">
-                                    <button class="btn btn--small btn--text dialog__btn">Cancel</button>
-                                    <button class="btn btn--small btn--primary dialog__btn">Confirm</button>
                                 </div>
                             </div>
                         </div>

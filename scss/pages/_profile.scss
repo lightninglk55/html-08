@@ -4,7 +4,9 @@
     &-container {
         margin-top: 30px;
 
-        @include abstracts.screen(lg)
+        @include abstracts.screen(xl) {
+            margin-top: 0px;
+        }
     }
 
     &__sidebar {
