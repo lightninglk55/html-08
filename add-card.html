@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
                 <!-- Profile content -->
                 <div class="profile-container">
                     <div class="row">
-                        <div class="col-3 col-lg-12 gy-xl-3">
+                        <div class="col-4 col-lg-12 gy-xl-3">
                             <div class="profile__sidebar">
                                 <!-- User -->
                                 <div class="profile-user">
@@ -141,121 +141,87 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-9 col-lg-12 gy-xl-3">
+                        <div class="col-8 col-lg-12 gy-xl-3">
                             <div class="col-12">
                             <div class="cart-info">
-                                <div class="profile-menu__top">
-                                    <h2 class="profile-menu__heading">My Wallet</h2>
-                                    <p class="profile-menu__desc">Payment methods</p>
-                                </div>
-                                <div class="row row-cols-xl-1">
-                                    <div class="col-12">
-                                        <article class="profile-menu__card">
-                                            <img src="./assets/img/profile/menu-card-1.png" alt="" class="profile-menu__card-item">
-                                            <img src="./assets/img/profile/menu-card-2.png" alt="" class="profile-menu__card-item">
-                                            <div class="profile-menu__card-row">
-                                                <div class="profile-menu__card-item--border">
-                                                    <img src="./assets/icon/plus.svg" alt="" class="profile-menu__card-item--icon icon">
-                                                    
-                                                </div>
-                                                <p>Add New Card</p>
+                                <label class="add-card__label">
+                                    <a href="./product-detail.html" class="cart-info__continue-link" >
+                                        <img src="./assets/icon/card-arrow-1.svg" alt="" class="cart-info__continue-icon icon" />
+                                        Continue Shopping
+                                    </a>
+                                </label>
+                                <div class="modal__body">
+                                    <div class="form__row">
+                                        <div class="form__group">
+                                            <label for="name" class="form__label form__label--small">First Name
+                                                </label>
+                                            <div class="form__text-input">
+                                                <input type="text" class="form__input" name="First Name" placeholder="Imran" id="name" minlength="2" required>
+                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
                                             </div>
-                                        </article>
-                                    </div>
-                                </div>
-                                <div class="profile-menu__top">
-                                    <h2 class="profile-menu__title">Account info</h2>
-                                    <p class="profile-menu__desc">Addresses, contact information and password</p>
-                                </div>
-                                <!-- profile item  -->
-                                <div class="row gy-xl-2">
-                                    <div class="col-6 col-xl-12 gy-xl-2">
-                                        <article class="payment-item payment-item__poiter profile-menu__pading">
-                                            <div class="profile-menu__icon-color">
-                                                <img src="./assets/icon/profile/menu-card-1.svg" alt="" class="profile-menu__card--icon icon">
+                                            <p class="form__error">Name must be at least 2 characters</p>
+                                        </div>
+                                        <div class="form__group">
+                                            <label for="phone" class="form__label form__label--small">Last Name</label>
+                                            <div class="form__text-input">
+                                                <input type="text" class="form__input" name="phone" placeholder="Khan" id="name" minlength="10" required>
+                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
                                             </div>
-                                                <div class="payment-item__content">
-                                                    <div class="payment-item__info">
-                                                            <h3 class="payment-item__title">Email Address</h3>
-                                                            <p class="peyment-item__desc peyment-item__desc--low">tarek97.ta@gmail.com</p>
-                                                    </div>
-                                                </div>
-                                        </article>
-                                        <article class="payment-item payment-item__poiter profile-menu__pading">
-                                            <div class="profile-menu__icon-color">
-                                                <img src="./assets/icon/profile/menu-card-2.svg" alt="" class="profile-menu__card--icon icon">
-                                            </div>
-                                                <div class="payment-item__content">
-                                                <div class="payment-item__info">
-                                                        <h3 class="payment-item__title">Add an address</h3>
-                                                        <p class="peyment-item__desc peyment-item__desc--low">Bangladesh Embassy, Washington, DC 20008</p>
-                                                </div>
-                                                </div>
-                                        </article>
-                                    </div>
-                                    <div class="col-6 col-xl-12">
-                                        <article class="payment-item payment-item__poiter profile-menu__pading">
-                                            <div class="profile-menu__icon-color">
-                                                <img src="./assets/icon/profile/menu-card-3.svg" alt="" class="profile-menu__card--icon icon">
-                                            </div>
-                                                <div class="payment-item__content">
-                                                <div class="payment-item__info">
-                                                        <h3 class="payment-item__title">Phone number</h3>
-                                                        <p class="peyment-item__desc peyment-item__desc--low">+000 11122 2345 657</p>
-                                                </div>
-                                                </div>
-                                        </article>
-                                    </div>
-                                </div>
-                                <!-- menu item -->
-                                    <div class="profile-container ">
-                                        <div class="profile-menu__bottom">
-                                            <div class="cart-info__heading">Lists</div>
-                                            <div class="cart-info__desc">2 items - Primary</div>
-                                            <article class="cart-item profile-menu__md">
-                                                <div>
-                                                    <a href="./product-detail.html">
-                                                        <img src="./assets/img/product-cart/product-1.png" alt="" class="cart-item__thumb profile-menu__thumb-img">
-                                                    </a>
-                                                </div>
-                                                <div class="cart-item__content">
-                                                    <div class="cart-item__content-left">
-                                                        <div class="cart-item__title">
-                                                            <h3 class="cart-item__title-heading">
-                                                                <a href="./product-detail.html">Coffee Beans - Espresso Arabica and Robusta Beans</a>
-                                                            </h3>
-                                                        </div>
-                                                        <div class="profile-menu__btn">
-                                                            <p class="profile-menu__price">$47.00</p>
-                                                            <a href="./checkout.html" class="btn btn--primary btn--rounded profile-menu__btn--bt">Add to cart</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="cart-item profile-menu__bt--saparate profile-menu__md">
-                                                <div>
-                                                    <a href="./product-detail.html">
-                                                        <img src="./assets/img/product-cart/product-2.png" alt="" class="cart-item__thumb profile-menu__thumb-img">
-                                                    </a>
-                                                </div>
-                                                <div class="cart-item__content">
-                                                    <div class="cart-item__content-left">
-                                                        <div class="cart-item__title">
-                                                            <h3 class="cart-item__title-heading">
-                                                                <a href="./product-detail.html">Coffee Beans - Espresso Arabica and Robusta Beans</a>
-                                                            </h3>
-                                                        </div>
-                                                        <div class="profile-menu__btn">
-                                                            <p class="profile-menu__price">$47.00</p>
-                                                            <a href="./checkout.html" class="btn btn--primary btn--rounded profile-menu__btn--bt">Add to cart</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
+                                            <p class="form__error">Phone must be at least 2 number</p>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="modal__body">
+                                    <div class="form__row">
+                                        <div class="form__group">
+                                            <label for="name" class="form__label form__label--small">Card Information</label>
+                                            <div class="form__text-input">
+                                                <input type="text" class="form__input" name="Card Number" placeholder="Card Number" id="name" minlength="2" required>
+                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                            </div>
+                                            <p class="form__error">Name must be at least 2 characters</p>
+                                        </div>
+                                        <div class="form__group">
+                                            <label for="phone" class="form__label form__label--small">Expiration Date</label>
+                                            <div class="form__text-input">
+                                                <input type="text" class="form__input" name="phone" placeholder="MM/YY" id="date" minlength="10" required>
+                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                            </div>
+                                            <p class="form__error">Phone must be at least 2 number</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__body">
+                                    <div class="form__row">
+                                        <div class="form__group">
+                                            <label for="name" class="form__label form__label--small">CVV</label>
+                                            <div class="form__text-input">
+                                                <input type="text" class="form__input" name="number" placeholder="123" id="name" minlength="2" required>
+                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                            </div>
+                                            <p class="form__error">Name must be at least 2 characters</p>
+                                        </div>
+                                        <div class="form__group">
+                                            <label for="phone" class="form__label form__label--small">Phone Number</label>
+                                            <div class="form__text-input">
+                                                <input type="phone" class="form__input" name="phone" placeholder="017" id="phone" minlength="10" required>
+                                                <img src="./assets/icon/form-error.svg" alt="" class="form__input-icon-error">
+                                            </div>
+                                            <p class="form__error">Phone must be at least 2 number</p>
+                                        </div>
+                                </div>
+                                <div class="profile__bottom-card">
+                                    <div class="address-card__buttom profile__bottom-row">Card Preferences</div>
+                                    <div class="form__group form__group--inline profile__inline">
+                                        <label class="form__checkbox form__checkbox-card">
+                                            <input type="checkbox" name="" id="" class="form__checkbox-input d-none"/>
+                                            <span class="form__ckeckbox-label form__checkbox--label">Set as default address</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal__bottom">
+                                    <button class="btn btn--small btn--text dialog__btn">Cancel</button>
+                                    <button class="btn btn--small btn--primary dialog__btn">Confirm</button>
                                 </div>
                             </div>
                         </div>

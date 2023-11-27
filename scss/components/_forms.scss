@@ -103,8 +103,7 @@
     }
 
     &__input {
-        color: #cbcbe4;
-
+        color: #5c5c63;
         &-icon {
             margin-left: 12px;
         }
@@ -216,6 +215,7 @@
         display: flex;
         align-items: center;
         user-select: none;
+        gap: 10px;
 
         &-label {
             margin-left: 20px !important;
@@ -240,6 +240,7 @@
         }
 
         &::before {
+            padding-right: 10px;
             width: 19px;
             height: 19px;
             border-radius: 5px;
@@ -250,6 +251,8 @@
 
         
     }
+
+
 
     &__checkbox:has(:checked) {
         &::before {
@@ -271,9 +274,22 @@
                 top: 3px;
             }
 
-
         }
     }
+
+    &__checkbox-card:has(:checked) {
+        &::before {
+            background-color: var(--profile-checkbox-bg);
+        }
+
+    }
+
+    &__bottom-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
 
     &__label {
         display: block;
